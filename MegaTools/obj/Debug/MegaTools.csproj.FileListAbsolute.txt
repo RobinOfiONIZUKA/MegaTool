@@ -1,0 +1,26 @@
+C:\Users\antol\source\repos\MegaTools\MegaTools\bin\Debug\MegaTools.exe.config
+C:\Users\antol\source\repos\MegaTools\MegaTools\bin\Debug\MegaTools.exe
+C:\Users\antol\source\repos\MegaTools\MegaTools\bin\Debug\MegaTools.pdb
+C:\Users\antol\source\repos\MegaTools\MegaTools\bin\Debug\DiscordRPC.dll
+C:\Users\antol\source\repos\MegaTools\MegaTools\bin\Debug\Guna.UI2.dll
+C:\Users\antol\source\repos\MegaTools\MegaTools\bin\Debug\MetroSuite 2.0.dll
+C:\Users\antol\source\repos\MegaTools\MegaTools\bin\Debug\Newtonsoft.Json.dll
+C:\Users\antol\source\repos\MegaTools\MegaTools\bin\Debug\DiscordRPC.pdb
+C:\Users\antol\source\repos\MegaTools\MegaTools\bin\Debug\DiscordRPC.xml
+C:\Users\antol\source\repos\MegaTools\MegaTools\bin\Debug\Newtonsoft.Json.xml
+C:\Users\antol\source\repos\MegaTools\MegaTools\obj\Debug\MegaTools.csproj.AssemblyReference.cache
+C:\Users\antol\source\repos\MegaTools\MegaTools\obj\Debug\MegaTools.csproj.SuggestedBindingRedirects.cache
+C:\Users\antol\source\repos\MegaTools\MegaTools\obj\Debug\MegaTools.Form1.resources
+C:\Users\antol\source\repos\MegaTools\MegaTools\obj\Debug\MegaTools.Logname.resources
+C:\Users\antol\source\repos\MegaTools\MegaTools\obj\Debug\MegaTools.Properties.Resources.resources
+C:\Users\antol\source\repos\MegaTools\MegaTools\obj\Debug\MegaTools.csproj.GenerateResource.cache
+C:\Users\antol\source\repos\MegaTools\MegaTools\obj\Debug\MegaTools.csproj.CoreCompileInputs.cache
+C:\Users\antol\source\repos\MegaTools\MegaTools\obj\Debug\MegaTools.csproj.CopyComplete
+C:\Users\antol\source\repos\MegaTools\MegaTools\obj\Debug\MegaTools.exe
+C:\Users\antol\source\repos\MegaTools\MegaTools\obj\Debug\MegaTools.pdb
+C:\Users\antol\source\repos\MegaTools\MegaTools\bin\Debug\DarkUI.dll
+C:\Users\antol\source\repos\MegaTools\MegaTools\bin\Debug\Siticone.UI.dll
+C:\Users\antol\source\repos\MegaTools\MegaTools\obj\Debug\MegaTools.Fortnite.resources
+C:\Users\antol\source\repos\MegaTools\MegaTools\obj\Debug\MegaTools.Welcome.resources
+C:\Users\antol\source\repos\MegaTools\MegaTools\bin\Debug\WeAreDevs_API.dll
+C:\Users\antol\source\repos\MegaTools\MegaTools\obj\Debug\MegaTools.Roblox.resources
