@@ -1,22 +1,19 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
-using System.IO.Compression;
+using System.Linq;
 using System.Net;
-using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using DiscordRPC;
-using DiscordRPC.Logging;
-using Newtonsoft.Json;
 
 namespace Configuracion
 {
     class Server
     {
-        public static string GetFNVer() 
+        public static string GetFNVer()
         {
             var FNVer = "";
             var EpicInstalled = File.ReadAllText(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.CommonApplicationData), "Epic\\UnrealEngineLauncher\\LauncherInstalled.dat"));
@@ -54,28 +51,38 @@ namespace Configuracion
             Process.Start("com.epicgames.launcher://apps/Fortnite?action=launch&silent=true");
         }
 
-        public static void KillFortnite() 
+        public static void KillFortnite()
         {
+            var Fortnite = ("Fortnitelauncher");
+            var AC = ("FortniteClient-Win64-Shipping_EAC");
+            var EpicGames = ("EpicGamesLauncher");
             DialogResult r = MessageBox.Show("¿Sure you want to close fortnite?", "Launcher", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (r == DialogResult.Yes)
             {
                 int i;
-                Process[] processesByName = Process.GetProcessesByName("FortniteClient-Win64-Shipping");
+                Process[] processesByName = Process.GetProcessesByName($"{Fortnite}");
                 for (i = 0; i < (int)processesByName.Length; i++)
                 {
                     processesByName[i].Kill();
                 }
-                processesByName = Process.GetProcessesByName("FortniteClient-Win64-Shipping");
+                processesByName = Process.GetProcessesByName($"{AC}");
+                for (i = 0; i < (int)processesByName.Length; i++)
+                {
+                    processesByName[i].Kill();
+                }
+                processesByName = Process.GetProcessesByName($"{EpicGames}");
                 for (i = 0; i < (int)processesByName.Length; i++)
                 {
                     processesByName[i].Kill();
                 }
             }
         }
-        
+
 
         public static async Task InstallDll()
         {
+            var url = ("https://cdn.discordapp.com/attachments/940826339877998633/977329620938547200/K1R4FN.dll");
+            var DLL = ("K1R4FN");
             string[] FNStuff = { "FortniteClient-Win64-Shipping_EAC.exe", "FortniteClient-Win64-Shipping_BE.exe", "FortniteLauncher.exe" };
 
             foreach (string procname in FNStuff)
@@ -101,30 +108,30 @@ namespace Configuracion
                     version = installion.AppVersion.ToString().Split('-')[1];
                 }
             }
-            if (!File.Exists(Path1 + "\\Diamond.old")) { }
+            if (!File.Exists(Path1 + $"\\{DLL}.old")) { }
             else
             {
-                File.Move(Path1 + "\\Diamond.dll", Path1 + "\\Diamond.dll.old");
+                File.Move(Path1 + $"\\{DLL}.dll", Path1 + $"\\{DLL}.dll.old");
             }
 
 
             WebClient webClient = new WebClient();
 
-            await webClient.DownloadFileTaskAsync("https://cdn.discordapp.com/attachments/940826339877998633/970558448959885362/Diamond.dll", TempPath + "\\Diamond.dll");
+            await webClient.DownloadFileTaskAsync($"{url}", TempPath + $"\\{DLL}.dll");
 
 
 
-            if (!File.Exists(Path1 + "\\Diamond.dll"))
+            if (!File.Exists(Path1 + $"\\{DLL}.dll"))
             {
-                File.Move(TempPath + "\\Diamond.dll", Path1 + "\\Diamond.dll");
+                File.Move(TempPath + $"\\{DLL}.dll", Path1 + $"\\{DLL}.dll");
             }
             else
             {
-                File.Delete(Path1 + "\\Diamond.dll");
-                File.Move(TempPath + "\\Diamond.dll", Path1 + "\\Diamond.dll");
+                File.Delete(Path1 + $"\\{DLL}.dll");
+                File.Move(TempPath + $"\\{DLL}.dll", Path1 + $"\\{DLL}.dll");
             }
 
-            }
+        }
 
         public static void Verify()
         {
@@ -137,6 +144,8 @@ namespace Configuracion
 
         public static async Task InstallSv()
         {
+            var url1 = ("https://cdn.discordapp.com/attachments/940826339877998633/977329621429276672/FortniteClient-Win64-Shipping_EAC.exe");
+            var url2 = ("https://cdn.discordapp.com/attachments/940826339877998633/977329621177630820/FortniteClient-Win64-Shipping_BE.exe");
 
             string Temp = Path.GetTempPath();
 
@@ -182,9 +191,9 @@ namespace Configuracion
 
             WebClient webClient = new WebClient();
 
-            await webClient.DownloadFileTaskAsync("https://cdn.discordapp.com/attachments/940826339877998633/970558545470828574/FortniteClient-Win64-Shipping_EAC.exe", TempPath + "\\FortniteClient-Win64-Shipping_EAC.exe");
-            await webClient.DownloadFileTaskAsync("https://cdn.discordapp.com/attachments/940826339877998633/970558545290477598/FortniteClient-Win64-Shipping_BE.exe", TempPath + "\\FortniteClient-Win64-Shipping_BE.exe");
-            
+            await webClient.DownloadFileTaskAsync($"{url1}", TempPath + "\\FortniteClient-Win64-Shipping_EAC.exe");
+            await webClient.DownloadFileTaskAsync($"{url2}", TempPath + "\\FortniteClient-Win64-Shipping_BE.exe");
+
 
 
             if (!File.Exists(Path1 + "\\FortniteClient-Win64-Shipping_EAC.exe"))
@@ -207,8 +216,7 @@ namespace Configuracion
                 File.Move(TempPath + "\\FortniteClient-Win64-Shipping_BE.exe", Path1 + "\\FortniteClient-Win64-Shipping_BE.exe");
             }
 
-            
+
+        }
     }
 }
-}
-
