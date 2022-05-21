@@ -160,5 +160,10 @@ namespace MegaTools
             guna2GradientTileButton4.BorderRadius = 21;
             guna2GradientTileButton2.BorderRadius = 21;
         }
+
+        private void guna2Panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

@@ -31,6 +31,7 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.sideBar = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.guna2GradientTileButton3 = new Guna.UI2.WinForms.Guna2GradientTileButton();
             this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.guna2GradientTileButton4 = new Guna.UI2.WinForms.Guna2GradientTileButton();
             this.guna2GradientTileButton2 = new Guna.UI2.WinForms.Guna2GradientTileButton();
@@ -44,7 +45,6 @@
             this.pictureBox22 = new System.Windows.Forms.PictureBox();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
-            this.guna2GradientTileButton3 = new Guna.UI2.WinForms.Guna2GradientTileButton();
             this.guna2DragControl2 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.guna2DragControl3 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.sideBar.SuspendLayout();
@@ -69,6 +69,23 @@
             this.sideBar.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(54)))), ((int)(((byte)(54)))));
             this.sideBar.Name = "sideBar";
             this.sideBar.ShadowDecoration.Parent = this.sideBar;
+            // 
+            // guna2GradientTileButton3
+            // 
+            this.guna2GradientTileButton3.Animated = true;
+            this.guna2GradientTileButton3.AutoRoundedCorners = true;
+            this.guna2GradientTileButton3.BackColor = System.Drawing.Color.Transparent;
+            this.guna2GradientTileButton3.BorderRadius = 21;
+            this.guna2GradientTileButton3.CheckedState.Parent = this.guna2GradientTileButton3;
+            this.guna2GradientTileButton3.CustomImages.Parent = this.guna2GradientTileButton3;
+            this.guna2GradientTileButton3.FillColor = System.Drawing.Color.Purple;
+            this.guna2GradientTileButton3.FillColor2 = System.Drawing.Color.Red;
+            resources.ApplyResources(this.guna2GradientTileButton3, "guna2GradientTileButton3");
+            this.guna2GradientTileButton3.ForeColor = System.Drawing.Color.White;
+            this.guna2GradientTileButton3.HoverState.Parent = this.guna2GradientTileButton3;
+            this.guna2GradientTileButton3.Name = "guna2GradientTileButton3";
+            this.guna2GradientTileButton3.ShadowDecoration.Parent = this.guna2GradientTileButton3;
+            this.guna2GradientTileButton3.Click += new System.EventHandler(this.guna2GradientTileButton3_Click);
             // 
             // guna2CirclePictureBox1
             // 
@@ -218,27 +235,11 @@
             resources.ApplyResources(this.guna2Panel1, "guna2Panel1");
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
+            this.guna2Panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2Panel1_Paint);
             // 
             // guna2DragControl1
             // 
             this.guna2DragControl1.TargetControl = this.guna2Panel1;
-            // 
-            // guna2GradientTileButton3
-            // 
-            this.guna2GradientTileButton3.Animated = true;
-            this.guna2GradientTileButton3.AutoRoundedCorners = true;
-            this.guna2GradientTileButton3.BackColor = System.Drawing.Color.Transparent;
-            this.guna2GradientTileButton3.BorderRadius = 21;
-            this.guna2GradientTileButton3.CheckedState.Parent = this.guna2GradientTileButton3;
-            this.guna2GradientTileButton3.CustomImages.Parent = this.guna2GradientTileButton3;
-            this.guna2GradientTileButton3.FillColor = System.Drawing.Color.Purple;
-            this.guna2GradientTileButton3.FillColor2 = System.Drawing.Color.Red;
-            resources.ApplyResources(this.guna2GradientTileButton3, "guna2GradientTileButton3");
-            this.guna2GradientTileButton3.ForeColor = System.Drawing.Color.White;
-            this.guna2GradientTileButton3.HoverState.Parent = this.guna2GradientTileButton3;
-            this.guna2GradientTileButton3.Name = "guna2GradientTileButton3";
-            this.guna2GradientTileButton3.ShadowDecoration.Parent = this.guna2GradientTileButton3;
-            this.guna2GradientTileButton3.Click += new System.EventHandler(this.guna2GradientTileButton3_Click);
             // 
             // guna2DragControl2
             // 

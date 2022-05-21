@@ -1,0 +1,27 @@
+C:\Users\antol\source\repos\MegaTools\MegaTools\bin\Release\MegaTools.exe.config
+C:\Users\antol\source\repos\MegaTools\MegaTools\bin\Release\MegaTools.exe
+C:\Users\antol\source\repos\MegaTools\MegaTools\bin\Release\MegaTools.pdb
+C:\Users\antol\source\repos\MegaTools\MegaTools\bin\Release\DarkUI.dll
+C:\Users\antol\source\repos\MegaTools\MegaTools\bin\Release\DiscordRPC.dll
+C:\Users\antol\source\repos\MegaTools\MegaTools\bin\Release\Guna.UI2.dll
+C:\Users\antol\source\repos\MegaTools\MegaTools\bin\Release\MetroSuite 2.0.dll
+C:\Users\antol\source\repos\MegaTools\MegaTools\bin\Release\Newtonsoft.Json.dll
+C:\Users\antol\source\repos\MegaTools\MegaTools\bin\Release\Siticone.UI.dll
+C:\Users\antol\source\repos\MegaTools\MegaTools\bin\Release\WeAreDevs_API.dll
+C:\Users\antol\source\repos\MegaTools\MegaTools\bin\Release\DiscordRPC.pdb
+C:\Users\antol\source\repos\MegaTools\MegaTools\bin\Release\DiscordRPC.xml
+C:\Users\antol\source\repos\MegaTools\MegaTools\bin\Release\Newtonsoft.Json.xml
+C:\Users\antol\source\repos\MegaTools\MegaTools\obj\Release\MegaTools.csproj.AssemblyReference.cache
+C:\Users\antol\source\repos\MegaTools\MegaTools\obj\Release\MegaTools.csproj.SuggestedBindingRedirects.cache
+C:\Users\antol\source\repos\MegaTools\MegaTools\obj\Release\MegaTools.Form1.resources
+C:\Users\antol\source\repos\MegaTools\MegaTools\obj\Release\MegaTools.Logname.resources
+C:\Users\antol\source\repos\MegaTools\MegaTools\obj\Release\MegaTools.Properties.Resources.resources
+C:\Users\antol\source\repos\MegaTools\MegaTools\obj\Release\MegaTools.Roblox.resources
+C:\Users\antol\source\repos\MegaTools\MegaTools\obj\Release\MegaTools.Welcome.resources
+C:\Users\antol\source\repos\MegaTools\MegaTools\obj\Release\MegaTools.csproj.GenerateResource.cache
+C:\Users\antol\source\repos\MegaTools\MegaTools\obj\Release\MegaTools.csproj.CoreCompileInputs.cache
+C:\Users\antol\source\repos\MegaTools\MegaTools\obj\Release\MegaTools.csproj.CopyComplete
+C:\Users\antol\source\repos\MegaTools\MegaTools\obj\Release\MegaTools.exe
+C:\Users\antol\source\repos\MegaTools\MegaTools\obj\Release\MegaTools.pdb
+C:\Users\antol\source\repos\MegaTools\MegaTools\obj\Release\MegaTools.Exchanger.resources
+C:\Users\antol\source\repos\MegaTools\MegaTools\obj\Release\MegaTools.FortniteServer.resources

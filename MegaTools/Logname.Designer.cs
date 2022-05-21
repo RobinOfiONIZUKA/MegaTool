@@ -51,6 +51,7 @@
             this.guna2TextBox1.Animated = true;
             this.guna2TextBox1.AutoRoundedCorners = true;
             this.guna2TextBox1.BorderRadius = 20;
+            this.guna2TextBox1.BorderStyle = System.Drawing.Drawing2D.DashStyle.Custom;
             this.guna2TextBox1.BorderThickness = 0;
             this.guna2TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.guna2TextBox1.DefaultText = "";
